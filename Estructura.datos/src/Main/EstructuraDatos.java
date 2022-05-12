@@ -7,6 +7,7 @@ package Main;
 
 import java.util.Scanner;
 
+import Ejercicios.Dos;
 import Ejercicios.Uno;
 
 /**
@@ -27,8 +28,8 @@ public class EstructuraDatos {
 
         while (!salir) {
 
-            System.out.println("1. Ejercicio 1");
-            System.out.println("2. Ejercicio 2");
+            System.out.println("1. Ejercicio 1 (calculadora)");
+            System.out.println("2. Ejercicio 2 (universidad)");
             System.out.println("3. Ejercicio 3");
             System.out.println("4. Ejercicio 4");
 
@@ -37,12 +38,14 @@ public class EstructuraDatos {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Has seleccionado la opcion 1");
+                    System.out.println("Has seleccionado la opcion 1 (calculadora)");
                     Uno a = new Uno();
                     a.menu();
                     break;
                 case 2:
-                    System.out.println("Has seleccionado la opcion 2");
+                    System.out.println("Has seleccionado la opcion 2 (universidad)");
+                    Dos b = new Dos();
+                    b.appUni();
                     break;
                 case 3:
                     System.out.println("Has seleccionado la opcion 3");
