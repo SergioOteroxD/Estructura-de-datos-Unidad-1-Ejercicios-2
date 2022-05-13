@@ -7,8 +7,11 @@ package Main;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 import Ejercicios.Dos;
 import Ejercicios.Uno;
+import Ejercicios.tres.Tres;
 
 /**
  *
@@ -27,14 +30,13 @@ public class EstructuraDatos {
         int opcion; // Guardaremos la opcion del usuario
 
         while (!salir) {
-
-            System.out.println("1. Ejercicio 1 (calculadora)");
-            System.out.println("2. Ejercicio 2 (universidad)");
-            System.out.println("3. Ejercicio 3");
-            System.out.println("4. Ejercicio 4");
-
-            System.out.println("Escribe una de las opciones");
-            opcion = sn.nextInt();
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("Digite la opcion que quiere ejecutar\n"
+            + "1. Ejercicio 1 (Calculadora)\n"
+            + " 2. Ejercicio 2 (Universidad)\n"
+            + " 3. Ejercicio 3 (Restaurante)\n"
+            + " 4. Ejercicio 4\n"
+            + " 5. Ejercicio 5\n"
+            + " 6. SALIR"));
 
             switch (opcion) {
                 case 1:
@@ -49,6 +51,8 @@ public class EstructuraDatos {
                     break;
                 case 3:
                     System.out.println("Has seleccionado la opcion 3");
+                    Tres tres = new Tres();
+                    tres.menu();
                     break;
                 case 4:
                     salir = true;
