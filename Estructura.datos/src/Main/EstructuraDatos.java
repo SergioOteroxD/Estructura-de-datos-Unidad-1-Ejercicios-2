@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 
 import Ejercicios.Dos;
 import Ejercicios.Uno;
+import Ejercicios.cuatro.Cuatro;
 import Ejercicios.tres.Tres;
 
 /**
@@ -31,12 +32,11 @@ public class EstructuraDatos {
 
         while (!salir) {
             opcion = Integer.parseInt(JOptionPane.showInputDialog("Digite la opcion que quiere ejecutar\n"
-            + "1. Ejercicio 1 (Calculadora)\n"
-            + " 2. Ejercicio 2 (Universidad)\n"
-            + " 3. Ejercicio 3 (Restaurante)\n"
-            + " 4. Ejercicio 4\n"
-            + " 5. Ejercicio 5\n"
-            + " 6. SALIR"));
+                    + "1. Ejercicio 1 (Calculadora)\n"
+                    + " 2. Ejercicio 2 (Universidad)\n"
+                    + " 3. Ejercicio 3 (Restaurante)\n"
+                    + " 4. Ejercicio 4 (Gasolinera)\n"
+                    + " 5. SALIR\n"));
 
             switch (opcion) {
                 case 1:
@@ -50,11 +50,16 @@ public class EstructuraDatos {
                     b.appUni();
                     break;
                 case 3:
-                    System.out.println("Has seleccionado la opcion 3");
+                    System.out.println("Has seleccionado la opcion 3 (Restaurante)");
                     Tres tres = new Tres();
                     tres.menu();
                     break;
                 case 4:
+                    System.out.println("Has seleccionado la opcion 3 (Gasolinera)");
+                    Cuatro cuatro = new Cuatro();
+                    cuatro.menu();
+                    break;
+                case 5:
                     salir = true;
                     break;
                 default:
