@@ -13,12 +13,12 @@ public class Servicio {
 
     private static int tipo;
     private static int jornada;
-    private static int valor;
+    private static int valor1;
 
-    Servicio(int tipo, int jornada, int valor) {
+    Servicio(int tipo, int jornada, int valor1) {
         this.tipo = tipo;
         this.jornada= jornada;
-        this.valor= valor;
+        this.valor1= valor1;
     }
 
 
